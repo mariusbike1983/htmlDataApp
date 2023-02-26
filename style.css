@@ -81,8 +81,3 @@
 .completed-todo-list > .todo-item {
     text-decoration: line-through;
 }
-
-.aNewClass {
-    background-color: blue;
-    color: red;
-}
