@@ -81,3 +81,7 @@
 .completed-todo-list > .todo-item {
     text-decoration: line-through;
 }
+
+.moreClassTest {
+    font: yellow;
+}
