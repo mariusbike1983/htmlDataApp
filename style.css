@@ -81,7 +81,3 @@
 .completed-todo-list > .todo-item {
     text-decoration: line-through;
 }
-
-.test {
-    color: black;
-}
