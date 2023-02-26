@@ -1,0 +1,87 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.todo-list {
+    padding-left: 5px;
+
+    display: flex;
+    flex-direction: column;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    min-height: 30px;
+}
+
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid black;
+    padding-bottom: 2px;
+    padding-right: 4px;
+    user-select: none;
+}
+
+.toolbar > .title {
+    align-self: start;
+    width: auto;;
+}
+
+.toolbar > .action {
+    align-self: end;
+    background-color: slategray;
+    color: antiquewhite;
+    margin-left: auto;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border: 2px solid green;
+    cursor: pointer;
+    user-select: none;
+}
+
+.action:hover {
+    background-color: salmon;
+    border-color: white;
+    color: black;
+}
+
+.current-todo-list {
+    color: black;
+    background-color: cadetblue;
+}
+
+.completed-todo-list  {
+    color: lightgray;
+    background-color: blueviolet;
+}
+
+.todo-item {
+    user-select: none;
+    cursor: pointer;
+    background-color: lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    color: rgb(57, 60, 63);
+    font-weight: 600;
+    padding: 5px;
+    margin: 5px;
+    border: 2px solid green;
+    border-radius: 10px;
+}
+
+.todo-item > .detail {
+    font-size: small;
+    font-weight: 300;
+    pointer-events: none;
+}
+
+.completed-todo-list > .todo-item {
+    text-decoration: line-through;
+}
+
+.test {
+    color: yellow;
+}

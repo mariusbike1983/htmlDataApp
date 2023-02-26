@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo list</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="loadData.js"></script>
+    <script type="text/javascript" src="loadDataExternal.js"></script>
+    <script type="text/javascript" src="logic.js"></script>
+</head>
+<body>
+    <h1>This is the todo-list</h1>
+    <div class="app" id="app">
+        
+        <div class="current-todo-list todo-list" id="current-todo-list">
+            <div class="toolbar">
+                <span class="title">Current todo items</span>
+                <span class="action" title="Add a new todo item" id="add-button">+</span>
+            </div>
+        </div>
+
+        <div class="completed-todo-list todo-list" id="completed-todo-list">
+            <div class="toolbar">
+                <span class="title">Completed todo items</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
