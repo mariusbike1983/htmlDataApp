@@ -58,12 +58,10 @@ function renderNewItem(modelElement) {
 }
 
 function updateItem(modelElement) {
-    let parent;
     const itemElement = dataStore.get(modelElement);
     if (modelElement.completed) {
-        parent = document.getElementById('completed-todo-list')
+        document.getElementById('completed-todo-list').appendChild(itemElement);
     } else {
-        parent = document.getElementById('current-todo-list');
+        document.getElementById('current-todo-list').appendChild(itemElement);
     }
-    parent.appendChild(itemElement);
 }
