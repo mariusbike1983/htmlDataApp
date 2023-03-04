@@ -9,9 +9,9 @@ function produceData(count) {
 
 function produceNewItem(i) {
     let newItem = {
-        text:   "item"+(i+1),
-        detail: "detail for item"+(i+1),
-        user:   "marius"
+        text:       "item"+(i+1),
+        detail:     "detail for item"+(i+1),
+        completed:  false
     }
     return newItem;
 }

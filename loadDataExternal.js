@@ -6,7 +6,7 @@ async function produceDataExternal(count) {
         .then(obj => {
             let data = [];
             obj.todos.forEach(element => {
-                let localElem = produceLocalElem(element);
+                let localElem = produceLocalElem(element.todo, "Today", false);
                 data.push(localElem);
             });
             window.data = data;
@@ -22,11 +22,11 @@ async function produceDataExternal(count) {
     // window.data = data;
 }
 
-function produceLocalElem(extElem) {
+function produceLocalElem(text, detail, completed) {
     let localElem = {
-        text:   extElem.todo,
-        detail: "detail for elem",
-        user:   extElem.userId
+        text:       text,
+        detail:     detail,
+        completed:  completed
     }
     return localElem;
 }
