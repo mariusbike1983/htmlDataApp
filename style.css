@@ -51,6 +51,10 @@ h1 {
     display: flex;
 }
 
+.action > .title {
+    padding-top: 2px;
+}
+
 .action:hover {
     background-color: salmon;
 }
