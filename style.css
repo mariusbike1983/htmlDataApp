@@ -90,6 +90,10 @@ h1 {
     pointer-events: none;
 }
 
+.todo-item > .text {
+    pointer-events: none;
+}
+
 .todo-item:hover {
     border-color: salmon;
 }

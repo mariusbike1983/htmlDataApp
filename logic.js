@@ -46,6 +46,7 @@ function renderNewItem(modelElement) {
     // render the rest of the components
     let itemText = this.document.createElement('div');
     itemText.innerText = modelElement.text;
+    itemText.classList.add("text");
     itemElement.appendChild(itemText);
 
     let itemDetail = this.document.createElement('span');
