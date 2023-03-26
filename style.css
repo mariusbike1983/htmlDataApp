@@ -2,6 +2,18 @@
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#app {
+    border: 1px solid black;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
+}
+
+h1 {
+    text-align: center;
+}
+
 .todo-list {
     padding-left: 5px;
 
@@ -20,6 +32,8 @@
     padding-bottom: 2px;
     padding-right: 4px;
     user-select: none;
+    background-color: lightgray;
+    border-bottom: 1px solid black;
 }
 
 .toolbar > .title {
@@ -29,22 +43,16 @@
 
 .toolbar > .action {
     align-self: end;
-    background-color: slategray;
-    color: antiquewhite;
     margin-left: auto;
-    width: 20px;
-    height: 20px;
-    line-height: 20px;
     text-align: center;
-    border: 2px solid green;
     cursor: pointer;
     user-select: none;
+    padding: 2px;
+    display: flex;
 }
 
 .action:hover {
     background-color: salmon;
-    border-color: white;
-    color: black;
 }
 
 .current-todo-list {
@@ -76,6 +84,10 @@
     font-size: small;
     font-weight: 300;
     pointer-events: none;
+}
+
+.todo-item:hover {
+    border-color: salmon;
 }
 
 .completed-todo-list > .todo-item {
