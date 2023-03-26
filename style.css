@@ -1,7 +1,3 @@
-* {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
 #app {
     border: 1px solid black;
     font-family: Avenir, Helvetica, Arial, sans-serif;
@@ -12,6 +8,10 @@
 
 h1 {
     text-align: center;
+    font-family: Avenir, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #2c3e50;
 }
 
 .todo-list {

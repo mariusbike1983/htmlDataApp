@@ -37,19 +37,20 @@ function handleClickOnItem(event) {
 
 function renderNewItem(modelElement) {
     let itemElement = this.document.createElement('div');
+    itemElement.classList.add('todo-item');
     // setup the two-way binding: the UI element has a link to the model. And the model
     // has a link to the UI in the data-store
     itemElement.modelElement = modelElement;
     dataStore.set(modelElement, itemElement);
 
     // render the rest of the components
-    itemElement.innerText = modelElement.text;
-    itemElement.classList.add('todo-item');
+    let itemText = this.document.createElement('div');
+    itemText.innerText = modelElement.text;
+    itemElement.appendChild(itemText);
 
     let itemDetail = this.document.createElement('span');
     itemDetail.innerText = modelElement.detail;
     itemDetail.classList.add("detail");
-
     itemElement.appendChild(itemDetail);
 
     itemElement.addEventListener('click', handleClickOnItem);
